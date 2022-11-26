@@ -9,6 +9,15 @@
     --mainColorLigt: #3e445f;
     --secondColor: #DB2B39;
     --textColor: #eee;
+
+    /* gradient colors*/
+    --color-1-:var(--mainColor);
+    --color-2-:#754678;
+    --color-3-:#bd5b7d;
+    --color-4-:#f18170;
+    --color-5-:#ffb861;
+    --color-6-:#f9f871;
+    --gradient: linear-gradient(90deg, var(--color-1-), var(--color-2-), var(--color-3-), var(--color-4-), var(--color-5-), var(--color-6-));
 }
 
 header{
@@ -32,11 +41,20 @@ nav a{
     margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
-
+    background-color: var(--textColor);
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    transition: .1s .2s;
+    background-clip: text;
 }
 
 nav a:hover{
-    color: var(--secondColor);
+    background-position: 0 0;
+    color: transparent;   
+    transition: 0.2s all;
+   
 }
 
 header .nav-btn{
@@ -67,7 +85,7 @@ header .nav-btn{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: 1s;
+        transition: 0.5s;
         transform: translateY(-100vh);
     }
 
@@ -88,6 +106,10 @@ header .nav-btn{
     nav a{
         font-size: 2rem;
         margin: 2rem 0;
+    }
+
+    nav a:hover{
+        transition: 0.1s;
     }
     
 }
