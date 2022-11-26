@@ -1,19 +1,12 @@
-import React, { useState } from 'react'
-import reactLogo from '../assets/react.svg'
 import '../styles/App.css'
-import NavBar from './NavBar'
-import Footer from './Footer'
+import React from 'react'
+
+
 
 function App() {
   
-  return (<>
-
-      <NavBar />
-
-      
-      <Footer />
-      
-    </>
+  return (
+    <h1>DA</h1>
   );
 }
 
