@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --gradient: linear-gradient(90deg, var(--color-1-), var(--color-2-), var(--color-3-), var(--color-4-), var(--color-5-), var(--color-6-));
+    --mainColor: #29335C;
+    --mainColorLigt: #3e445f;
+    --secondColor: #DB2B39;
+    --textColor: #eee;
+    
+    /* gradient colors*/
+    --color-1-:var(--mainColor);
+    --color-2-:#754678;
+    --color-3-:#bd5b7d;
+    --color-4-:#f18170;
+    --color-5-:#ffb861;
+    --color-6-:#f9f871;
+
+
+}
+
+.gradient-line{
+
+    background-image: linear-gradient(0deg, var(--color-1-), var(--color-2-), var(--color-3-), var(--color-4-), var(--color-5-), var(--color-6-));
+    height: 20rem;
+    margin: 0 auto;
+    width: 3rem;
+    
+}
+
+.gradient-line__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.school-icon{
+    width: 5vw;
+    height: 5vw;
+    color: #eee;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+}
+
+.graduation-icon{
+    width: 5vw;
+    height:5vw;
+    color: #eee;
+    
+}
