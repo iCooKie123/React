@@ -6,6 +6,8 @@ export default function EducationContent() {
 return (
     <div className="education-content">
         <GradientLine/>
+        <h1></h1>
+        <p></p>
         
     </div>
 

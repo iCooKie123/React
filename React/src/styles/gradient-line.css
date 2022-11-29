@@ -5,6 +5,11 @@
 
 }
 
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
 :root{
     --gradient: linear-gradient(90deg, var(--color-1-), var(--color-2-), var(--color-3-), var(--color-4-), var(--color-5-), var(--color-6-));
     --mainColor: #29335C;
@@ -24,34 +29,12 @@
 }
 
 .gradient-line{
-
+    background-color: #3e445f;
     background-image: linear-gradient(0deg, var(--color-1-), var(--color-2-), var(--color-3-), var(--color-4-), var(--color-5-), var(--color-6-));
-    height: 20rem;
+    height: 100%;
     margin: 0 auto;
-    width: 3rem;
-    
+    width: 1rem;
+    background-size: cover;
+    border-radius: 40px;
 }
 
-.gradient-line__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
-.school-icon{
-    width: 5vw;
-    height: 5vw;
-    color: #eee;
-    border-radius: 50%;
-    background-color: var(--mainColor);
-    border: 2px solid var(--mainColor);
-}
-
-.graduation-icon{
-    width: 5vw;
-    height:5vw;
-    color: #eee;
-    
-}
