@@ -29,12 +29,13 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  HashRouter,
 } from "react-router-dom";
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Home/>,
     errorElement: <PageNotFound/>,
   },
@@ -55,6 +56,16 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}>
+      <HashRouter>
+        <Route path="" element={<Home/>} />
+        <Route path="/about-me" element={<About/>} />
+        <Route path="/education" element={<Education/>} />
+        <Route path="/experience" element={<Experience/>} />
+      </HashRouter>
+    </RouterProvider>
   </React.StrictMode>
+
+  //   <RouterProvider router={router} />
+  // </React.StrictMode>
 );
