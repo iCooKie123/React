@@ -36,7 +36,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Home/>,
     errorElement: <PageNotFound/>,
   },
