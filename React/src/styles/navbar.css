@@ -1,3 +1,5 @@
+/* navbar css */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +28,9 @@ header{
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
     color: var(--textColor);
+    background-color: var(--mainColor);
+    
 }
 
 nav{
@@ -41,11 +44,11 @@ nav a{
     margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
-    background-color: var(--textColor);
+    background-color: var(--mainColor);
     background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
     background-position: 100% 0;
     background-size: 200% 200%;
-    color: transparent;
+    
     transition: .1s .2s;
     background-clip: text;
 }

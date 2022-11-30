@@ -29,12 +29,14 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Home/>,
     errorElement: <PageNotFound/>,
   },
@@ -55,6 +57,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}/>
+
   </React.StrictMode>
+
+  //   <RouterProvider router={router} />
+  // </React.StrictMode>
 );
