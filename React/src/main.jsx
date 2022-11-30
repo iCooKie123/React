@@ -30,6 +30,7 @@ import {
   RouterProvider,
   Route,
   HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 
 
@@ -56,14 +57,11 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <HashRouter>
-        <Route path="" element={<Home/>} />
-        <Route path="/about-me" element={<About/>} />
-        <Route path="/education" element={<Education/>} />
-        <Route path="/experience" element={<Experience/>} />
-      </HashRouter>
-    </RouterProvider>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <RouterProvider value={router}>
+       </RouterProvider>
+    </BrowserRouter>
+
   </React.StrictMode>
 
   //   <RouterProvider router={router} />
