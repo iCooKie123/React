@@ -1,0 +1,105 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* icons */
+
+.school-icon{
+    
+    width: 5vw;
+    height: 5vw;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+}
+
+.graduation-icon{
+    width: 5vw;
+    height:5vw;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    
+}
+
+/* gradient line */
+/* .gradient-line{
+    height: 5vh;
+} */
+
+/* grid-components*/
+.grid-container{
+    display: grid;
+    
+    grid-gap: 10px;
+    background-color: rgb(61, 59, 59);
+    
+}
+
+.layour{
+    display: relative;
+    z-index: -1;
+}
+.error{
+    background-color: red;
+}
+
+.responsive-nav{
+    z-index: 1;
+}
+
+.grid-1-1{
+    grid-area: 1/1/9/2;
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.grid-2-1{
+    grid-row: 1;
+    grid-column: 2;
+    height: 5vh;
+    width:100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-2-2{
+    grid-column:2;
+    grid-row:2;
+    display: flex;
+    justify-content: center;
+}
+.parag1{
+    
+    color: white;
+    text-align: center;
+    
+}
+
+.grid-1-2{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-1-5{
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-1-3{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+}
