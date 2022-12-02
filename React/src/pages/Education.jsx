@@ -29,15 +29,16 @@ function Education() {
 
       <div className="grid-2-2">
         <div className="parag1">
-          <h1 className="page-not-found__title">404</h1>
-          <h2 className="page-not-found__subtitle">Page Not Found</h2>
+          <h1 className="page-not-found__title">"C.A. Rosetti Highschool"</h1>
+          <h3>2016-2020</h3>
+          <h2 className="page-not-found__subtitle">Mathematics and Computer sciences</h2>
 
         </div>
       </div>
 
       
 
-      <div className="grid-1-5">
+      <div className="grid-1-3">
         <FaSchool className="school-icon"/>
       </div>
     </div>
